@@ -1,0 +1,135 @@
+*{
+    font-family: Arial, sans-serif;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1A416F;
+    padding: 8px 10px;
+}
+
+h1{
+    font-size: 35px;
+    margin: 0;
+}
+
+header nav a {
+    color: white;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 18px;
+}
+
+header nav a:hover {
+    color: #D0E6FF; 
+    text-decoration: underline;
+    font-size: 18px;
+}
+
+footer {
+    background-color: #24426A; 
+    color: #92AED0;
+    border-top-left-radius: 24px; 
+    border-top-right-radius: 24px;
+    padding: 40px 50px;
+    margin:0px;
+    font-weight: 600; 
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch; 
+    width: 100%;
+}
+
+.footer-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: left;
+    gap: 15px; 
+}
+
+.footer-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end; 
+    gap: 15px;
+}
+
+.footer-title {
+    color: white;
+    font-size: 26px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase; 
+    letter-spacing: 1px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 16px;
+}
+
+.cities {
+    display: flex;
+    gap: 20px;
+    font-size: 18px;
+}
+
+.footer-nav {
+    display: flex;
+    gap: 20px;
+}
+
+.footer-nav a {
+    margin: 0;
+    color: #92AED0;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.footer-nav a:hover {
+    color: white; 
+}
+
+@media screen and (max-width: 768px) {
+    footer {
+        padding: 28px 20px;
+    }
+    .footer-container {
+        flex-direction: column !important;
+        gap: 24px;
+    }
+    .footer-left,
+    .footer-right {
+        align-items: flex-start !important;
+        gap: 8px;
+        width: 100%;
+    }
+    .footer-right {
+        text-align: left;
+    }
+    .footer-title {
+        font-size: 18px;
+    }
+    .cities {
+        flex-wrap: wrap;
+        gap: 8px;
+        font-size: 14px;
+        justify-content: flex-start;
+    }
+    .footer-nav {
+        flex-wrap: wrap;
+        gap: 8px;
+        justify-content: flex-start;
+    }
+}

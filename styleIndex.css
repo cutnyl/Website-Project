@@ -1,0 +1,253 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body{
+    background-image: 
+        linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)),
+        url('source.png/Untitled\ design-4.png');
+}
+
+h2{
+    text-align: center;
+    color: #1A416F;
+    font-size: 40px;
+    padding-bottom: 10px;
+}
+
+/* judul */
+.judul{
+    position: relative;
+    width: fit-content;
+}
+
+.judul img{
+    width: 1200px;
+    height: 550px;
+    object-fit:fill;
+    border-radius: 40px;
+    margin-top: 40px;
+    margin-left: 128px;
+    border: 5px solid #1A416F;
+}
+
+.judul h1{
+    position: absolute;
+    color: #1A416F;
+    font-size: 80px;
+    bottom: 390px;
+    left: 15%;
+}
+
+.button-container{
+    display: flex;
+    gap: 30px;
+    position: relative;
+    bottom: 280px;
+    left: 180px;
+}
+
+.about, .regist{
+    text-decoration: none;
+    padding: 18px 33px;
+    font-size: 25px;
+    font-weight: bold;
+    transition: 0.3s;
+    border-radius: 15px;
+}
+
+.about{
+    color: #313773;
+    background-color: #D0E6FF;
+    border: 2px solid #92AED0;
+}
+
+.about:hover{
+    color: #BED1E3;
+    background-color: #323661;
+    border: 2px solid #3673BB;
+    box-shadow:0 10px 20px rgba(47, 124, 232, 0.544);
+}
+
+.regist{
+    color: #BED1E3;
+    background-color: #323661;
+    border: 2px solid #3673BB;
+}
+
+.regist:hover{
+    color: #313773;
+    background-color: #D0E6FF;
+    border: 2px solid #92AED0;
+    box-shadow:0 10px 20px rgba(138, 171, 218, 0.544);
+}
+
+/*latest-update*/
+.update-container{
+    background-color: #B7CFEB;
+    border: 2px solid #1A416F;
+    padding: 10px;
+    padding-bottom: 40px;
+}
+
+.latest-update{
+    margin-left: 36%;
+    margin-top: -50px;
+    margin-bottom: 40px;
+}
+
+.latest-update h2{
+    color: white;
+    background-color: #1A416F;
+    width: 440px;
+    font-size: 50px;
+    margin: 0;
+    text-shadow: 0 4px 8px rgba(0,0,0,0.4);
+    text-align: center;
+    border-radius: 20px;
+}
+
+/*carousel*/
+.carousel{
+    width: 900px;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 20px;
+    border: 15px solid #1A416F;
+}
+.carousel-track{
+    display: flex;
+    transition: transform 1s ease-in-out;
+    will-change: transform; 
+}
+
+.slide{
+    flex: 0 0 100%;
+    min-width: 100%;
+    text-align: center;
+    background-color: #F1F7FF; 
+    box-sizing: border-box;
+}
+
+.slide img{
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    display: block;  
+}
+
+.slide h3{
+    margin-top: 20px;
+    font-size: 40px;
+    color: #1A416F;
+    padding: 0 20px;          
+}
+
+.slide p{
+    margin-top: 10px;
+    margin-bottom: 30px;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 1.4;
+    padding: 0 30px;      
+}
+
+/* favorite troops*/
+
+.fav-troops h2{
+    padding-top: 40px;
+}
+
+.card-container{
+    display: grid;
+    grid-template-columns: repeat(2, 350px);
+    justify-content: center;
+    gap: 60px;
+    margin-top: 30px;
+    padding-bottom: 80px;
+}
+
+.card{
+    background-color: #F0F7FF;
+    border: 5px solid #93B5DC;
+    border-radius: 27px;
+    padding: 15px;
+    text-align: center;
+    width: 350px;
+    height: 370px;
+}
+
+.card:first-child{
+    grid-column: 1 / span 2;
+    justify-self: center;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+    box-shadow:
+        0 0 10px #86dafe80,
+        0 0 20px #0e33744d;
+    border: 5px solid #11498680;
+}
+
+.card img{
+    width: 312px;
+    height: 220px;
+    object-fit: contain;
+    background: linear-gradient(
+        180deg, #93B5DC 0%, #E8EEF5 100%
+    );
+    border-radius: 27px;
+}
+
+.card h2{
+    color: #205799;
+    text-align: center;
+    padding-top: 6px;
+}
+
+.card p{
+    color: #92AED0;
+    text-align: center;
+    font-size: larger;
+
+}
+
+/*welcome*/
+.welcome{
+    background-color: #B7CFEB;
+    border: 2px solid #1A416F;
+    padding: 40px;
+}
+
+.welcome h2{
+    padding-bottom: 30px;
+}
+
+.welcome p{
+    text-align: justify;
+    color: #316CB2;
+    font-size: 20px;
+    padding-bottom: 30px;
+    max-width: 700px;
+    margin-left: 380px;
+}
+
+.welcome a{
+    margin-left: 45%;
+    color: #316CB2;
+    font-size: 23px;
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+.welcome a:hover{
+    margin-left: 45%;
+    color: #1A416F;
+    font-size: 23px;
+    transition: 0.3s;
+    text-decoration: underline;
+}
