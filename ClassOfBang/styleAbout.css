@@ -23,19 +23,20 @@ body{
 
 .text {
     position: absolute;
-    top: 100px; 
-    left: 50px; 
+    top: 200px; 
+    left: 80px; 
 }
 
 .text h1{
     color: #1A416F;
-    font-size: 96px;
-    margin: 0px;
+    font-size: 85px ;
+    line-height: 1.1;
+    margin-bottom: 10px;
 }
 
-.about p{
+.text p{
     color: #316CB2;
-    font-size: 32px;
+    font-size: 32px ;
 }
 
 .journey{

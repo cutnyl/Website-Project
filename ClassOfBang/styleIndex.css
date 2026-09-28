@@ -22,6 +22,7 @@ h2{
 .judul{
     position: relative;
     width: fit-content;
+    margin: 0 auto;
 }
 
 .judul img{
@@ -30,16 +31,16 @@ h2{
     object-fit:fill;
     border-radius: 40px;
     margin-top: 40px;
-    margin-left: 128px;
     border: 5px solid #1A416F;
+    display: block;
 }
 
 .judul h1{
     position: absolute;
     color: #1A416F;
-    font-size: 80px;
+    font-size: 70px;
     bottom: 390px;
-    left: 15%;
+    left: 80px;
 }
 
 .button-container{
@@ -47,7 +48,7 @@ h2{
     gap: 30px;
     position: relative;
     bottom: 280px;
-    left: 180px;
+    left: 80px;
 }
 
 .about, .regist{

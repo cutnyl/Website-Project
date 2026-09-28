@@ -4,13 +4,14 @@
     justify-content: space-between;
     width: 20px;
     height: 14px;
-    background: none;
+    background: transparent;
     border: none;
     cursor: pointer;
     padding: 0;
     flex-shrink: 0;
     position: relative;
-    z-index: 999;
+    z-index: 9999 !important;
+    pointer-events: auto !important;
 }
 
 .hamburger span {
@@ -202,11 +203,15 @@
         flex-direction: column;
         width: 100%;
         background-color: #1A416F;
-        order: 3;
-        margin-top: 8px;
+        position: absolute; 
+        top: 100%;
+        left: 0;
+        z-index: 999;
+        padding: 10px 0;
     }
-    header nav.nav-open {
-        display: flex;
+    header nav.nav-open,
+    #main-nav.nav-open {
+        display: flex !important; /* Tambahkan !important agar CSS menang */
     }
     header nav a {
         margin: 0;

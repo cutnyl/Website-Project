@@ -2,16 +2,16 @@
     font-family: Arial, sans-serif;
 }
 
-header{
+header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: #1A416F;
-    padding: 8px 10px;
+    padding: 20px 50px; 
 }
 
 h1{
-    font-size: 35px;
+    font-size: 35px !important;
     margin: 0;
 }
 
@@ -21,13 +21,13 @@ header nav a {
     margin-right: 20px;
     text-decoration: none;
     transition: 0.3s;
-    font-size: 18px;
+    font-size: 20px !important;   
 }
 
 header nav a:hover {
     color: #D0E6FF; 
     text-decoration: underline;
-    font-size: 18px;
+    font-size: 20px !important;
 }
 
 footer {
